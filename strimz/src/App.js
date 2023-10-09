@@ -1,25 +1,39 @@
-import React, { useState } from 'react';
+
 import NavBar from './components/Navbar';
 import './App.css';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom"
+import HomePage from "./pages/HomePage"
+import HomePageConnected from "./pages/HomePageConnected"
+import Profile from "./pages/Profile"
 
 function App() {
- 
+  // initialize a browser router
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <HomePage />,
+    },
+
+    {
+      path: "/profile",
+      element: <Profile />,
+    },
+    
+    {
+      path: "/homepage",
+      element: <HomePageConnected />,
+    }
+  ])
 
   return (
-    <div >
-      <header>
-        <NavBar/> 
-      </header>
-      <main>
-          <div className='main-content'>
-            <div className='presentation'>
-              <h1> Become the best music critic ! Keep track of your listenings !</h1>
-            </div>
-          </div>
-          
-      </main>
-    </div>
-  );
+    <>
+    <NavBar/>
+    <RouterProvider router={router} />
+    </>
+  )
 }
 
-export default App;
+export default App
