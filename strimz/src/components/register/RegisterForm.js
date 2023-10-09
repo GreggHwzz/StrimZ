@@ -20,13 +20,13 @@ function RegisterForm({onClose}) {
             <h2>Register</h2>
             {/* Ajoutez ici les champs de votre formulaire */}
             <form>
-              <label htmlFor="username">Username</label>
-              <input type="text" id="username" name="username" />
-
-              <label htmlFor="password">Password</label>
-              <input type="password" id="password" name="password" />
-
-              <button type="submit">Register</button>
+              <input type="text" id="username" name="username" placeholder='Username' className='register-placeholder'/>
+              <br/>
+              <input type="text" id="email" name="email" placeholder='Email' className='register-placeholder'/>
+              <br/>
+              <input type="password" id="password" name="password" placeholder='Password' className='register-placeholder'/>
+              <br/>
+              <button type="submit" className='register-button'>Register</button>
             </form>
           </div>
         </div>
