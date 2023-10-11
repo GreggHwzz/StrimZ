@@ -1,5 +1,5 @@
 
-import NavBar from './components/Navbar';
+import NavBar from './components/navbar/Navbar';
 import './App.css';
 import {
   createBrowserRouter,
