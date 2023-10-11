@@ -1,6 +1,4 @@
-body {
-  background-color: #545454;
-}
+
 
 main {
   top: 50px;
@@ -50,11 +48,44 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
 .presentation {
-  position: absolute;
+  position: relative;
   font-size: 30px;
-  top : 300px;
-  left: 50%;
+  top : 250px;
   width: 700px;
   color: whitesmoke;
+}
+
+.screen {
+  position: absolute;
+  top: 300px;
+  left: 6%; 
+}
+
+.second-content {
+  background-color: whitesmoke;
+  margin-top:400px;
+  height: 300px;
+  padding-top: 10px;
+}
+
+.second-content h2 {
+  font-size: 30px;
+  width: 400px;
+  margin-left: 40px;
+}
+
+.second-content p {
+  margin-left: 40px;
+  width: 400px;
+}
+
+.second-content div {
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.second-content div span {
+  left: 30px;
 }
