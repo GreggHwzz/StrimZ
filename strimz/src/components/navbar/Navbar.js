@@ -1,8 +1,8 @@
 import './Navbar.css';
 import React, { useState } from 'react';
-import image from '../img/Logo3_strimz.png';
-import LoginForm from './login/LoginForm';
-import RegisterForm from './register/RegisterForm'
+import image from '../../img/Logo3_strimz.png';
+import LoginForm from '../login/LoginForm';
+import RegisterForm from '../register/RegisterForm'
 
 
 
