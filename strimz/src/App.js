@@ -1,13 +1,14 @@
 
-import NavBar from './components/navbar/Navbar';
 import './App.css';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom"
+import { createBrowserRouter, RouterProvider, Route, Routes} from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import HomePageConnected from "./pages/HomePageConnected"
 import Profile from "./pages/Profile"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
+import PrivacyPolicy from "./pages/PrivacyPolicy"
+import Terms from "./pages/Terms"
+import NavBar from './components/navbar/Navbar';
 
 function App() {
   // initialize a browser router
@@ -25,7 +26,29 @@ function App() {
     {
       path: "/homepage",
       element: <HomePageConnected />,
-    }
+    },
+
+    {
+      path: "/about",
+      element: <About/>
+    },
+
+    {
+      path: "/contact",
+      element: <Contact/>
+    },
+
+    {
+      path: "/privacypolicy",
+      element: <PrivacyPolicy/>
+    },
+
+    {
+      path: "/terms",
+      element: <Terms/>
+    },
+
+
   ])
 
   return (
@@ -33,7 +56,7 @@ function App() {
     <NavBar/>
     <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

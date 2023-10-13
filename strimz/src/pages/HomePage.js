@@ -37,10 +37,10 @@ export default function HomePage() {
           </div>
           <div className="third-content">
           <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Terms</a></li>
+            <li><a href="./About">About</a></li>
+            <li><a href="./Contact">Contact</a></li>
+            <li><a href="./PrivacyPolicy">Privacy Policy</a></li>
+            <li><a href="./Terms">Terms</a></li>
           </ul>
           <ul>
             <li><a href=""><img src={fb} alt="Facebook"  class="hoverable-image" width="40px" height="auto"></img></a></li>

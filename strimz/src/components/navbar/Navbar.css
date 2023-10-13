@@ -1,11 +1,4 @@
-body {
-    background-color: #545454;
-  }
-  
-  main {
-    top: 50px;
-    z-index: 1;
-  }
+
   
   .image-logo {
     position : relative;
@@ -48,14 +41,5 @@ body {
   
   .button-signup:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .presentation {
-    position: absolute;
-    font-size: 30px;
-    top : 300px;
-    left: 50%;
-    width: 700px;
-    color: whitesmoke;
   }
   
