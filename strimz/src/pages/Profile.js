@@ -1,14 +1,15 @@
-export default function Profile ()  {
+import CarouselComponent from "../components/Carousel/Carousel.js";
+import "./Profile.css"
+export default function Profile() {
     return (
-        <main>
-          <div className='main-content'>
-            <div className='presentation'>
-              <h1> Profile</h1>
+    <div className="carousel1">
+        <div className="">
+            <h1 className="popularReviews">POPULAR REVIEWS</h1>
+            <div>
+            <CarouselComponent />
             </div>
-          </div>
-          
-      </main>
-    )
-
-
+            
+        </div>
+    </div>
+    );
 }
