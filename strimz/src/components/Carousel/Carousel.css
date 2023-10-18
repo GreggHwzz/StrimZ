@@ -1,7 +1,7 @@
 .cards{
     display: flex;
     background-color: whitesmoke;
-    padding: 20px ;
+    padding: 10px ;
     flex-direction: row;
     align-items: center; 
     height: 90%;
@@ -11,7 +11,7 @@
 }
 
 .description{
-    margin-left: 20px;
+    margin-left: 10px;
 }
     
 .title{
@@ -26,14 +26,14 @@
     width: 40px;
    
 
-    border-radius: 15px;
+    border-radius: 15px ;
     position: sticky;
     bottom: 10px;
 }
 
 .horizontal-line {
-    border: 0.8px solid black;
-    margin-bottom: 20px; 
+    border: 1px solid black;
+    margin-bottom: 40px; 
   
   }
   

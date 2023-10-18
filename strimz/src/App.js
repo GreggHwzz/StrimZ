@@ -9,6 +9,7 @@ import Contact from "./pages/Contact"
 import PrivacyPolicy from "./pages/PrivacyPolicy"
 import Terms from "./pages/Terms"
 import NavBar from './components/navbar/Navbar';
+import Review from "./pages/Review"
 
 function App() {
   // initialize a browser router
@@ -17,7 +18,11 @@ function App() {
       path: "/",
       element: <HomePage />,
     },
+    {
+      path: "review",
+      element: <Review/>
 
+    },
     {
       path: "/profile",
       element: <Profile />,
