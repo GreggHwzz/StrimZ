@@ -48,7 +48,7 @@ export default function Review() {
                 </div>
             </div>
             <div className='right-container'>
-                <p > Album de Nirvana · 09/24/1991</p>
+                <p > Album by Nirvana · 09/24/1991</p>
                 
                 <h2> USER REVIEWS</h2>
                 <hr className="horizontal-line" /> 
@@ -66,7 +66,7 @@ export default function Review() {
                             <td> {truncateText(item.review, 200)}</td>
                         </tr>
                         <tr>
-                            <td style={{color:'#fccf1b'}}> Lire la critique</td>
+                            <td style={{color:'#fccf1b'}}> Read the review</td>
                         </tr>
                         <tr style={{fontSize:"small"}}> by {item.first_name} {item.last_name} on {item.date} </tr>
                         
