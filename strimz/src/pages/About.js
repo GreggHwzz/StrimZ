@@ -17,6 +17,29 @@ export default function About(){
              <button a href="http://localhost:3000/homepage">See More</button>
            </div>
 
+<div class="why-it-works-section">
+  <h2>About the Team</h2>
+  
+  <div class="benefit">
+    <img src="./img/personalized_learning_icon.png" alt="Personalized Learning Icon"></img>
+    <h3>Gregory</h3>
+    <p>Full-stack dev</p>
+  </div>
+
+  <div class="benefit">
+    <img src="./img/trusted_content_icon.png" alt="Trusted Content Icon"></img>
+    <h3>Victoria</h3>
+    <p>Full-stack dev</p>
+  </div>
+
+  <div class="benefit">
+    <img src="./img/git_prof_E.jpeg" alt="Tools to Empower Teachers Icon"></img>
+    <h3>Elyas</h3>
+    <p>Full-stack dev</p>
+  </div>
+  </div>
+
+
            <div className="third-content">
           <ul>
             <li><a href="./About">About</a></li>
