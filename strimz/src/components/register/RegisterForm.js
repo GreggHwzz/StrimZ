@@ -1,13 +1,22 @@
 import React, { useState } from 'react';
+import { useNavigate  } from 'react-router-dom';
 import './RegisterForm.css';
 
 function RegisterForm({onClose}) {
   const [isPopupOpen, setPopupOpen] = useState(true); // Affichez le popup par défaut
-
+  const navigate = useNavigate ();
+  
   const handleClosePopup = () => {
     setPopupOpen(false);
     onClose();
   };
+
+  const handleLogin=(event)=> {
+    event.preventDefault();
+    // ...
+    // 
+    navigate("./homepage");
+  }
 
   return (
     <div className={`RegisterForm ${isPopupOpen ? 'popup-open' : ''}`}>
@@ -19,7 +28,7 @@ function RegisterForm({onClose}) {
             </span>
             <h2>Register</h2>
             {/* Ajoutez ici les champs de votre formulaire */}
-            <form>
+            <form onSubmit={handleLogin}>
               <input type="text" id="username" name="username" placeholder='Username' className='register-placeholder'/>
               <br/>
               <input type="text" id="email" name="email" placeholder='Email' className='register-placeholder'/>
