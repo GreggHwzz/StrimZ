@@ -8,8 +8,10 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import PrivacyPolicy from "./pages/PrivacyPolicy"
 import Terms from "./pages/Terms"
-import NavBar from './components/navbar/Navbar';
 import Review from "./pages/Review"
+
+
+
 
 function App() {
   // initialize a browser router
@@ -58,7 +60,7 @@ function App() {
 
   return (
     <>
-    <NavBar/>
+    
     <RouterProvider router={router} />
     </>
   );
