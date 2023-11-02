@@ -8,10 +8,12 @@ import tt from "../img/tic-tac.png"
 import ytb from "../img/youtube.png"
 import inst from "../img/instagram.png"
 import x from "../img/twitter.png"
+import NavBar from '../components/navbar/Navbar';
  
 export default function HomePage() {
     return (
         <main>
+          <NavBar/>
           <div className='first-content'>
           <img src={Screen1} alt="Screen" className="screen"></img>
             <div className='presentation'>
