@@ -45,11 +45,11 @@ export default function HomePage() {
             <li><a href="./Terms">Terms</a></li>
           </ul>
           <ul>
-            <li><a href=""><img src={fb} alt="Facebook"  class="hoverable-image" width="40px" height="auto"></img></a></li>
-            <li><a href=""><img src={inst} alt="Instagram"  class="hoverable-image" width="40px" height="auto"></img></a></li>
-            <li><a href=""><img src={ytb} alt="Youtube" class="hoverable-image" width="40px" height="auto"></img></a></li>
-            <li><a href=""><img src={tt} alt="Tik-tok" class="hoverable-image" width="40px" height="auto"></img></a></li>
-            <li><a href=""><img src={x} alt="Twitter"  class="hoverable-image" width="40px" height="auto"></img></a></li>
+            <li><a href="http://localhost:3000/about"><img src={fb} alt="Facebook"  class="hoverable-image" width="40px" height="auto"></img></a></li>
+            <li><a href="http://localhost:3000/about"><img src={inst} alt="Instagram"  class="hoverable-image" width="40px" height="auto"></img></a></li>
+            <li><a href="http://localhost:3000/about"><img src={ytb} alt="Youtube" class="hoverable-image" width="40px" height="auto"></img></a></li>
+            <li><a href="http://localhost:3000/about"><img src={tt} alt="Tik-tok" class="hoverable-image" width="40px" height="auto"></img></a></li>
+            <li><a href="http://localhost:3000/about"><img src={x} alt="Twitter"  class="hoverable-image" width="40px" height="auto"></img></a></li>
           </ul>
           <span>© 2023, TV Time, EFREI Students</span>
           </div>
