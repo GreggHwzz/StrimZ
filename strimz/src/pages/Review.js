@@ -3,6 +3,7 @@ import React, { useState, useMemo } from 'react';
 import write from '../img/ecrire.png'
 import data from '../mock-data.json';
 import Pagination from '../components/pagination/Pagination';
+import NavBar from "../components/navbar/Navbar.js";
 
 let PageSize = 5;
 

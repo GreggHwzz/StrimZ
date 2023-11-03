@@ -1,4 +1,5 @@
-import NavBar from "../components/navbar/Navbar";
+import CarouselComponent from "../components/Carousel/Carousel.js";
+import NavBar from "../components/navbar/Navbar.js";
 
 export default function HomePageConnected() {
     return (
@@ -6,11 +7,25 @@ export default function HomePageConnected() {
         <main>
           <NavBar/>
           <div className='main-content'>
-            <div className='presentation'>
-              <h1> ...
-                
-              </h1>
+          <div className="carousel1">
+            <div className="">
+              <h2 className="popularReviews">POPULAR REVIEWS</h2>
+              <div>
+                <CarouselComponent />
+              </div>
+            
             </div>
+          </div>
+          <div className="carousel1">
+            <div className="">
+              <h2 className="popularReviews">RECENT REVIEWS</h2>
+              <div>
+                <CarouselComponent />
+              </div>
+            
+            </div>
+          </div>
+
           </div>
           
       </main>

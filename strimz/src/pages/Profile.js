@@ -1,15 +1,17 @@
 import CarouselComponent from "../components/Carousel/Carousel.js";
+import NavBar from "../components/navbar/Navbar.js";
 import fb from "../img/facebook.png"
 import tt from "../img/tic-tac.png"
 import ytb from "../img/youtube.png"
 import inst from "../img/instagram.png"
 import x from "../img/twitter.png"
 import profilepic from "../img/profile_pic.png";
-import NavBar from "../components/navbar/Navbar.js";
+import './Profile.css'
+
 
 export default function Profile() {
     return (
-        <main>
+        <>
         <NavBar/>
 
         <div class="container">
@@ -18,13 +20,10 @@ export default function Profile() {
             
         </div>
 
-        <div class="intercontain">
-            <h2>MY REVIEWS</h2>
-        </div>
-
+   
         <div className="carousel1">
             <div className="">
-            <h2 className="popularReviews">POPULAR REVIEWS</h2>
+            <h2 className="popularReviews">MY REVIEWS</h2>
             <div>
             <CarouselComponent />
             </div>
@@ -48,6 +47,6 @@ export default function Profile() {
           </ul>
           <span>© 2023, TV Time, EFREI Students</span>
           </div>
-    </main>
+    </>
     );
 }

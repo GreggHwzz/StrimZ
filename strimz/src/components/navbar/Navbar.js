@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import image from '../../img/Logo3_strimz.png';
 import LoginForm from '../login/LoginForm';
 import RegisterForm from '../register/RegisterForm';
@@ -27,11 +28,14 @@ const NavBar = () => {
     setRegisterFormOpen(false);
   };
 
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/');
+
  
 
   return (
     <>
-      <img src={image} alt="StrimZ" className='image-logo' />
+      <img src={image} alt="StrimZ" className='image-logo'  onClick={handleClick} />
       <div className="header-buttons">
         <button className='button-login' onClick={handleOpenLoginForm}>Login</button>
         <button className='button-signup' onClick={handleOpenRegisterForm}>Sign Up</button>
