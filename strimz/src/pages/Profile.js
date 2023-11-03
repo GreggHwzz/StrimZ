@@ -17,13 +17,9 @@ export default function Profile() {
             
         </div>
 
-        <div class="intercontain">
-            <h2>MY REVIEWS</h2>
-        </div>
-
         <div className="carousel1">
             <div className="">
-            <h2 className="popularReviews">POPULAR REVIEWS</h2>
+            <h2 className="popularReviews">MY REVIEWS</h2>
             <div>
             <CarouselComponent />
             </div>
