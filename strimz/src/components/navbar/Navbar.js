@@ -4,6 +4,7 @@ import image from '../../img/Logo3_strimz.png';
 import LoginForm from '../login/LoginForm';
 import RegisterForm from '../register/RegisterForm';
 import './Navbar.css'
+import profile from '../../img/profileLogo.png'
 
 const NavBar = () => {
 
@@ -18,7 +19,7 @@ const NavBar = () => {
 
   const handleCloseLoginForm = () => {
     setLoginFormOpen(false);
-    navigate('/profile'); 
+
   };
 
   const handleOpenRegisterForm = () => {
@@ -31,8 +32,9 @@ const NavBar = () => {
   };
 
   const navigate = useNavigate();
-  const handleClick = () => navigate('/');
 
+  const handleClick = () => navigate('/');
+  const handleMyProfileClick = () => navigate('/profile');
  
 
   return (
@@ -41,6 +43,13 @@ const NavBar = () => {
       <div className="header-buttons">
         <button className='button-login' onClick={handleOpenLoginForm}>Login</button>
         <button className='button-signup' onClick={handleOpenRegisterForm}>Sign Up</button>
+        <img
+            
+            src={profile}
+            alt="My Profile"
+            className="profile-image"
+            onClick={handleMyProfileClick}
+          />
       </div>
       {isLoginFormOpen && (
         <div className="popup-overlay">
