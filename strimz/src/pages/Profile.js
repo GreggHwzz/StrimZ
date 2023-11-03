@@ -13,24 +13,40 @@ export default function Profile() {
     return (
         <>
         <NavBar/>
-
-        <div class="container">
-        <img class="profilePic" src={profilepic} alt="pdp"></img>
-            <p id="scribeun"> Nom Prénom</p>
-            
+        
+    <div className="">
+        <div className="profile-top">
+          <img className="profilePic" src={profilepic} alt="pdp"/>
+            <div >
+                <h1 style={{fontSize:"40px", marginBottom: "0px", color:"white"}}>John Doe</h1>
+                
+            </div>
         </div>
-
-   
+    </div>
+    <div className='profile-white-container'>
+        <div className="centered-container">
         <div className="carousel1">
             <div className="">
-            <h2 className="popularReviews">MY REVIEWS</h2>
+            <h2 className="popularReviews" style={{color:'black'}}>MY REVIEWS</h2>
             <div>
             <CarouselComponent />
             </div>
             
             </div>
         </div>
+            
+           
+        </div>
+       
 
+       
+    </div>
+
+
+
+
+
+  
         <div className="third-content">
           <ul>
             <li><a href="./About">About</a></li>

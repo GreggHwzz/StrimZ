@@ -142,6 +142,22 @@ main {
 
 }
 
+.profile-top{
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
+}
+
+.profile-white-container{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height: 100hv;
+  top:350px;
+  background-color: whitesmoke;
+  z-index: 2;
+}
+
 .popularReviews{
   margin-left: 50px;
   color: #DADADA;  
