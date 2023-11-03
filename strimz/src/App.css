@@ -185,3 +185,95 @@ body{
 padding: 30px;
 }
 
+
+/* -----------AboutUs------------- */
+
+.about-us-section {
+  width: 80%; 
+  margin: 50px auto; 
+  padding: 50px;
+ 
+  border-radius: 20px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f0f0f0;
+  background-size: cover;  
+  background-repeat: no-repeat;  
+  background-position: center center; 
+  position: relative;
+}
+
+.about-us-section::before {
+  content: "";
+  background-image: url('./img/mic_background.jpg');
+  background-size: cover;  
+  background-repeat: no-repeat;  
+  background-position: center center;
+  filter: opacity(0.5);  
+  
+  position: absolute;  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.about-us-section h1 {
+  font-size: 48px; 
+  margin-bottom: 20px; 
+}
+
+.about-us-section p {
+  font-size: 18px; 
+  text-align: center;
+  margin-bottom: 30px; 
+}
+
+.about-us-section button {
+  padding: 10px 20px; 
+  background-color: #ffde59; 
+  color: #565656; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.about-us-section button:hover {
+  background-color: #565656; 
+  color: #DADADA;
+}
+
+.why-it-works-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.why-it-works-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.benefit {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  margin: 0 2%;
+}
+
+.benefit img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.benefit h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.benefit p {
+  font-size: 1rem;
+}
