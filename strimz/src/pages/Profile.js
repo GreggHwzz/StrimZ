@@ -6,7 +6,7 @@ import ytb from "../img/youtube.png"
 import inst from "../img/instagram.png"
 import x from "../img/twitter.png"
 import profilepic from "../img/profile_pic.png";
-import './Profile.css'
+
 
 
 export default function Profile() {

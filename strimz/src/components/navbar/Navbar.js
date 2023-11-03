@@ -9,6 +9,7 @@ const NavBar = () => {
 
   const [isLoginFormOpen, setLoginFormOpen] = useState(false);
   const [isRegisterFormOpen, setRegisterFormOpen] = useState(false);
+  
 
   const handleOpenLoginForm = () => {
     setLoginFormOpen(true);
@@ -17,6 +18,7 @@ const NavBar = () => {
 
   const handleCloseLoginForm = () => {
     setLoginFormOpen(false);
+    navigate('/profile'); 
   };
 
   const handleOpenRegisterForm = () => {
