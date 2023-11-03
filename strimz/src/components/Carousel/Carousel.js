@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 import { Carousel } from 'primereact/carousel';
 import "./Carousel.css"
 
@@ -75,8 +75,10 @@ export default function CarouselComponent () {
 
 
     const Template = (cardData) => {
+      const navigate = useNavigate();
+      const handleClick = () => navigate('/review');
         return (
-            <div className="cards">
+            <div className="cards" onClick={handleClick}>
                 <div className="image">
                     <img src={cardData.imageUrl} alt={cardData.title} className="" style={{width:"100px"}} />
                 </div>
