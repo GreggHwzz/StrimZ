@@ -8,6 +8,8 @@
   }
   
   .header-buttons {
+    display: flex;
+
     position : absolute;
     top: 30px;
     right: 20px;
@@ -37,9 +39,15 @@
     font-size: 16px;
     font-weight: 900;
     padding: 10px 20px ;
+
   }
   
   .button-signup:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
+.profile-image{
+  margin-left: 15px;
+  height: 45px;
+
+}
