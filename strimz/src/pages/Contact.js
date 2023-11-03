@@ -5,7 +5,18 @@ export default function Contact() {
     name: '',
     email: '',
     message: '',
+    category:'',
   });
+
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleCategoryClick = (category) => {
+    setFormData({
+      ...formData,
+      category: category,
+    });
+    setActiveButton(category);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,14 +28,38 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Ici, vous pouvez ajouter la logique pour envoyer les données du formulaire à votre backend
-    console.log('Données du formulaire soumises :', formData);
+    const json = JSON.stringify(formData);
+    localStorage.setItem('contactData', json);
+    console.log('Données du formulaire sauvegardées en JSON :', json);
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+      category: '',
+    });
+    setActiveButton(null);
   };
+
+  const isActive = (category) => activeButton === category;
 
   return (
     <main>
-      <div>
+      <div className='contact-form'>
+       
         <h1>Contact us</h1>
+        <h3>-Any Question ?</h3>
+        <div>
+          {['Problem', 'Idea development', 'Recruitment', 'Artist Support', 'Others'].map((category) => (
+            <button
+              key={category}
+              type="button"
+              className={isActive(category) ? 'active' : ''}
+              onClick={() => handleCategoryClick(category)}
+            >
+              {category}
+            </button>
+          ))}
+          </div>
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name</label>
@@ -55,7 +90,7 @@ export default function Contact() {
               onChange={handleChange}
             />
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" onClick={handleSubmit}>Submit</button>
         </form>
       </div>
     </main>

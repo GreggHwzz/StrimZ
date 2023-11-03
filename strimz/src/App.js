@@ -21,7 +21,7 @@ function App() {
       element: <HomePage />,
     },
     {
-      path: "review",
+      path: "/review",
       element: <Review/>
 
     },
