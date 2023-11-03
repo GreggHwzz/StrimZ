@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import fb from "../img/facebook.png"
+import tt from "../img/tic-tac.png"
+import ytb from "../img/youtube.png"
+import inst from "../img/instagram.png"
+import x from "../img/twitter.png"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -48,8 +53,9 @@ export default function Contact() {
        
         <h1>Contact us</h1>
         <h3>-Any Question ?</h3>
+        <div className='content'>
         <div>
-          {['Problem', 'Idea development', 'Recruitment', 'Artist Support', 'Others'].map((category) => (
+          {['Problem', 'Development', 'Recruitment', 'Artist support', 'Others'].map((category) => (
             <button
               key={category}
               type="button"
@@ -61,37 +67,53 @@ export default function Contact() {
           ))}
           </div>
         <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name">Name</label>
+          <div className="input-row">
             <input
               type="text"
               id="name"
               name="name"
+              placeholder='Your name'
               value={formData.name}
               onChange={handleChange}
             />
-          </div>
-          <div>
-            <label htmlFor="email">Email</label>
+          
             <input
               type="email"
               id="email"
               name="email"
+              placeholder='Your mail'
               value={formData.email}
               onChange={handleChange}
             />
           </div>
           <div>
-            <label htmlFor="message">Message</label>
             <textarea
               id="message"
               name="message"
+              placeholder='What do you want ? Ask us.'
               value={formData.message}
               onChange={handleChange}
             />
           </div>
-          <button type="submit" onClick={handleSubmit}>Submit</button>
+          <button type="submit" onClick={handleSubmit}>Send Request</button>
         </form>
+        </div>
+        <div className="third-content">
+          <ul>
+            <li><a href="./About">About</a></li>
+            <li><a href="./Contact">Contact</a></li>
+            <li><a href="./PrivacyPolicy">Privacy Policy</a></li>
+            <li><a href="./Terms">Terms</a></li>
+          </ul>
+          <ul>
+            <li><a href="http://localhost:3000/about"><img src={fb} alt="Facebook"  class="hoverable-image" width="40px" height="auto"></img></a></li>
+            <li><a href="http://localhost:3000/about"><img src={inst} alt="Instagram"  class="hoverable-image" width="40px" height="auto"></img></a></li>
+            <li><a href="http://localhost:3000/about"><img src={ytb} alt="Youtube" class="hoverable-image" width="40px" height="auto"></img></a></li>
+            <li><a href="http://localhost:3000/about"><img src={tt} alt="Tik-tok" class="hoverable-image" width="40px" height="auto"></img></a></li>
+            <li><a href="http://localhost:3000/about"><img src={x} alt="Twitter"  class="hoverable-image" width="40px" height="auto"></img></a></li>
+          </ul>
+          <span>© 2023, TV Time, EFREI Students</span>
+          </div>
       </div>
     </main>
   );
