@@ -3,6 +3,7 @@ import React, { useState, useMemo } from 'react';
 import write from '../img/ecrire.png'
 import data from '../mock-data.json';
 import Pagination from '../components/pagination/Pagination';
+import NavBar from "../components/navbar/Navbar.js";
 
 let PageSize = 5;
 
@@ -25,6 +26,7 @@ export default function Review() {
 
     return (
     <>
+    <NavBar/>
     <div className="page-container">
         <div className="top">
             <img style={{width:'15%', paddingTop:'3%'}} alt="album" src="https://images.prismic.io/milanote/df7eeb83a07162b45ac2e882cac055de9411054a_cover.jpg?auto=compress,format" />
